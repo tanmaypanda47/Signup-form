@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="heading">Signup Form</p>
+        <div class="box">
+        <form onsubmit ="return validateForm()">
+            <label>Full Name</label>
+            <div>
+            <input type="text" id="uname" value="" required placeholder="Enter your Fullname"></div>
+            <span id="blankMsg" style="color: red;"> </span>
+            
+
+            <label>Email or Phone</label>
+            <div>
+            <input type="text" placeholder="Enter your mail id">
+            </div>
+
+            <label>Password</label>
+            <div>
+            <input type="password" id="pswd1" value="" placeholder="Enter password"></div>
+            <span id = "message1" style="color:red"> </span>
+            
+
+            <label>Confirm Password</label>
+            <div>
+            <input type="password" id="pswd2" value="" placeholder="Confirm password"></div>
+            <span id="message2" style="color: red;"> </span>
+            
+        </div>
+
+            <button class="loginBtn">Submit</button>
+            <p class="text">Already a member? <a href="#">Login here</a></p>
+            
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
 
